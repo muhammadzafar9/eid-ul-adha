@@ -1,0 +1,150 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Poppins:wght@300&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+    overflow: hidden;
+
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  
+  /* Preloader */
+  
+  #preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    /* change if the mask should have another color then white */
+    z-index: 99;
+    /* makes sure it stays on top */
+  }
+  
+  #status {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    /* centers the loading animation horizontally one the screen */
+    top: 50%;
+    /* centers the loading animation vertically one the screen */
+    background-image: url(https://raw.githubusercontent.com/niklausgerber/PreLoadMe/master/img/status.gif);
+
+    /* path to your loading animation */
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: -100px 0 0 -100px;
+    /* is width and height divided by two */
+  }
+
+
+  /* animation */
+  
+
+  #container {
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+  }
+
+
+  /* card */
+
+  /* img{
+    
+    background-repeat:no-repeat;
+background-size:cover;
+background-position:center;
+    width: 150vh;
+    height: 100%;
+    background-size:100%;
+  } */
+
+  body{
+
+    
+    background-image: url(https://images.pexels.com/photos/7249191/pexels-photo-7249191.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    /* background-position-y: center; */
+
+    /* https://images.pexels.com/photos/36704/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260 */
+
+    /* https://images.pexels.com/photos/7249191/pexels-photo-7249191.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260 */
+    background-repeat:no-repeat;
+background-size: cover;
+background-position:center;
+/* position: static; */
+scroll-behavior: smooth;
+
+
+
+
+  }
+
+  
+
+
+  /* animaaaation */
+
+
+            
+  .output {
+    text-align: center;
+    font-family:  'Poppins', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
+    
+    color: #FFF;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    /* margin: auto; */
+ }
+  .output h1 {
+    font-size: 35px;
+ }
+ /* Cursor Styling */
+  .cursor::after {
+    content: '';
+    display: inline-block;
+    margin-left: 3px;
+    background-color: white;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+ }
+  h1.cursor::after {
+    height: 24px;
+    width: 13px;
+ }
+  p.cursor::after {
+    height: 13px;
+    width: 6px;
+ }
+  @keyframes blink {
+    0% {
+      opacity: 1;
+   }
+    49% {
+      opacity: 1;
+   }
+    50% {
+      opacity: 0;
+   }
+    100% {
+      opacity: 0;
+   }
+ }
+  
+
+
+ 
+
+ 
+  
